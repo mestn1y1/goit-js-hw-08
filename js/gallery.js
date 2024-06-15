@@ -77,9 +77,7 @@ function hundlerGetEl(evt) {
   } else if (evt.target.nodeName === "IMG") {
     const imgsrc = evt.target.dataset.source;
     const instance = basicLightbox.create(
-      `<div class="modal">
-      <img class="big-img" src="${imgsrc}">
-      </div>`
+      `<img class="big-img" src="${imgsrc}">`
     );
 
     instance.show();
